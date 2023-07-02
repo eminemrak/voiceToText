@@ -9,5 +9,5 @@ Utilized frameworks and libraries:
 - Speech
 - AudioEngine
 
-<img src="https://github.com/eminemrak/voiceToText/assets/65747238/44617f71-e60b-471b-bcbb-fa4557972d0d" alt="Görsel Açıklaması" width="500" height="800">
+<img src="https://github.com/eminemrak/voiceToText/assets/65747238/44617f71-e60b-471b-bcbb-fa4557972d0d" alt="Görsel Açıklaması" width="375" height="812">
 
