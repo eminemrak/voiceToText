@@ -1,5 +1,6 @@
 # voiceToText
 With the "voiceToText" application, you can convert your voice recordings into text.
+The application is not yet complete. Updates will be made.
 
 Utilized frameworks and libraries:
 - TableView
