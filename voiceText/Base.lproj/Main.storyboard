@@ -371,11 +371,11 @@
             </objects>
             <point key="canvasLocation" x="-251" y="556"/>
         </scene>
-        <!--Profile-->
+        <!--Settings-->
         <scene sceneID="dnO-rz-h4e">
             <objects>
                 <navigationController id="TXo-l7-uAz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="xC1-kZ-fjD"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="xC1-kZ-fjD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HJT-Lu-bl1">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -412,10 +412,29 @@
                     <view key="view" contentMode="scaleToFill" id="i5p-jX-ZjG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDJ-n9-Ei1">
+                                <rect key="frame" x="96.666666666666686" y="376" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="apJ-OZ-2fJ"/>
+                                    <constraint firstAttribute="height" constant="100" id="qdq-Xv-cXo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="486-QE-PfV"/>
                         <color key="backgroundColor" name="backgraund"/>
+                        <constraints>
+                            <constraint firstItem="pDJ-n9-Ei1" firstAttribute="centerX" secondItem="i5p-jX-ZjG" secondAttribute="centerX" id="Leo-Bt-DjC"/>
+                            <constraint firstItem="pDJ-n9-Ei1" firstAttribute="centerY" secondItem="i5p-jX-ZjG" secondAttribute="centerY" id="lnw-75-LhT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HHJ-Zb-mjr"/>
+                    <connections>
+                        <outlet property="labelText" destination="pDJ-n9-Ei1" id="6BU-vH-vci"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Brp-dj-zrW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -424,8 +443,8 @@
     </scenes>
     <resources>
         <image name="folder" catalog="system" width="128" height="96"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="highlighter" catalog="system" width="128" height="120"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="backgraund">
             <color red="1" green="0.93725490196078431" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

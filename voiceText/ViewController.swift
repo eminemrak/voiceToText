@@ -37,20 +37,13 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, UINavigationCon
         super.viewDidLoad()
         
         
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        
+        view.addGestureRecognizer(gestureRecognizer)
         
         sesDosyasıYukle.setTitle("Yüklemek istediğiniz ses dosyasını seçin!", for: .normal)
         
        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         audioEngine = AVAudioEngine()
@@ -62,6 +55,10 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, UINavigationCon
                 // Mikrofon erişimi reddedildi
             }
         }
+    }
+    
+    @objc func hideKeyboard() {
+        view.endEditing(true)
     }
     
     
